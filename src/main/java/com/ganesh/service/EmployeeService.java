@@ -9,8 +9,8 @@ public interface EmployeeService {
 
     public boolean saveEmployee(Employee emp);
     public List<Employee> getAllEmployees();
-    public Employee getEmployeeById(int id);
+    public Employee getEmployeeById(long id);
     public boolean updateEmployee(Employee emp);
-    public boolean deleteEmployee(int id);
+    public boolean deleteEmployee(long id);
     public List<Department> getDepartments();
 }

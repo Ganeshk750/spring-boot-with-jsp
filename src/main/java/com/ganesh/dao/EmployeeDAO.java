@@ -10,8 +10,8 @@ public interface EmployeeDAO {
 
     public boolean save(Employee emp);
     public List<Employee> getAllEmployees();
-    public Employee getEmployeeById(int id);
+    public Employee getEmployeeById(long id);
     public boolean update(Employee emp);
-    public boolean deleteEmployee(int id);
+    public boolean deleteEmployee(long id);
     public List<Department> getDepartments();
 }
