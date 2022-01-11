@@ -129,7 +129,7 @@ public class EmployeeDAOImpl extends JdbcDaoSupport implements EmployeeDAO {
 
     @Override
     public boolean deleteEmployee(long id) {
-        int count = getJdbcTemplate().update("delete * employee where id="+ id);
+        int count = getJdbcTemplate().update("delete employee where id="+ id);
         if(count == 1){
             return true;
         }
